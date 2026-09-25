@@ -1,0 +1,2 @@
+# Conocimiento del proceso
+RC1 proveedor existe y activo: bloqueo. RC2 aprobación válida y aprobador del centro: bloqueo. RC3 monto dentro del tope: bloqueo. RC4 subárea pertenece al centro: bloqueo. RC5 diferencia cotización/solicitud >2% o falta cotización: confirmación. RC6 IVA ausente: derivar default y confirmar. RC7 pago ausente: derivar default e informar. RC8 factura anterior a solicitud: retroactiva y confirmar. RC9 aprobación anterior a solicitud: confirmar. RC10 cantidad × unitario = total ±1: bloqueo.
