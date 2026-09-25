@@ -54,7 +54,15 @@ Los maestros entregados son completos; el correo es evidencia suficiente para el
 | HU5 SAP mock/idempotencia/control | Hecho | adaptador SAP real |
 | HU6 errores legibles | Hecho | observabilidad centralizada |
 | Chat/tool calls/confirmación | Hecho | autenticación si se exige |
-| Link público | No hecho | desplegar antes de defensa |
+| Link público | Hecho | desplegado en Render en modo determinístico |
+
+### Despliegue de evaluación
+
+La aplicación está disponible públicamente en:
+
+https://reto-03-rodriguez-stev.onrender.com
+
+El despliegue público utiliza `LLM_PROVIDER=deterministic` para permitir la evaluación sin depender de credenciales o consumo de terceros. La arquitectura conserva el adaptador OpenAI y el ciclo de agente para habilitar el modo LLM configurando `LLM_PROVIDER=openai` y una API key con consumo habilitado.
 
 ## 11. Uso de IA
 Se utilizó ChatGPT para revisar el PRD, estructurar la solución, generar una primera implementación y revisar cobertura. Se mantuvieron deterministas las reglas financieras. Se descartó cualquier propuesta que inventara datos faltantes, corrigiera montos para hacerlos coincidir o permitiera saltar bloqueos.

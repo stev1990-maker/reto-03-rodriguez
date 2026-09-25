@@ -165,7 +165,11 @@ El SAP utilizado en el reto es un mock local. Las órdenes se generan secuencial
 
 ## URL pública
 
-La URL pública del despliegue se añadirá aquí al finalizar el despliegue.
+Aplicación desplegada para evaluación:
+
+https://reto-03-rodriguez-stev.onrender.com
+
+El despliegue de evaluación utiliza `LLM_PROVIDER=deterministic`, por lo que no requiere credenciales ni consumo de una API LLM externa.
 
 ## Documentación técnica
 
